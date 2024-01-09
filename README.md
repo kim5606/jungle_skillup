@@ -20,6 +20,7 @@
 
 ### 2.1 프로젝트 구조
 
+```plaintext
 📦src/
 ┣📂assets/
 ┃ ┣🎞️background.mp4
@@ -77,6 +78,7 @@
 ┣🎨index.css
 ┣💻index.js
 ┗💻reportWebVitals.js
+```
 
 ### 2.2 개발 일정
 
