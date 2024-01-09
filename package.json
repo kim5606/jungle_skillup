@@ -3,25 +3,61 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@react-oauth/google": "^0.12.1",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "async_hooks": "^1.0.0",
+    "aws-sdk": "^2.1528.0",
+    "axios": "^1.6.3",
+    "bcrypt": "^5.1.1",
+    "canvas-confetti": "^1.9.2",
+    "concurrently": "^8.2.2",
+    "connect-flash": "^0.1.1",
+    "cors": "^2.8.5",
+    "date-fns": "^2.16.1",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "jsonwebtoken": "^9.0.2",
+    "mock-aws-s3": "^4.0.2",
+    "multer": "^1.4.5-lts.1",
+    "mysql": "^2.18.1",
+    "nock": "^13.4.0",
+    "passport": "^0.7.0",
+    "passport-google-oauth20": "^2.0.0",
+    "quilljs-markdown": "^1.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
+    "react-modal": "^3.16.1",
+    "react-quill": "^2.0.0",
+    "react-router-dom": "^6.21.1",
+    "react-scripts": "^3.0.1",
+    "sanitize-html": "^2.11.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start:server": "node src/services/Server.js",
+    "start:client": "react-scripts start",
+    "start": "concurrently --kill-others \"npm run start:server\" \"npm run start:client\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "buildAndServe": "npm run build && serve -s build",
+    "server": "node .src/services/Server.js",
+    "dev": "concurrently --kill-others \"npm run start\" \"npm run server\""
+  },
+  "resolutions": {
+    "webpack": "^4.44.2"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
       "react-app/jest"
-    ]
+    ],
+    "rules": {
+      "react/react-in-jsx-scope": "off"
+    }
   },
   "browserslist": {
     "production": [

@@ -1,3 +1,6 @@
+.modal-content::-webkit-scrollbar {
+  display: none;
+}
 .App {
   text-align: center;
 }

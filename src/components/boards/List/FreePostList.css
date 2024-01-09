@@ -1,0 +1,256 @@
+body {
+  overflow-x: hidden;
+}
+/* 버튼 */
+
+.button-container {
+  position: relative;
+  top: 10vh;
+  left: 45vw;
+  display: flex;
+  gap: 10px;
+  z-index: 1;
+}
+.post-list-container {
+  position: relative;
+  top: 10vh;
+  left: 1vw;
+}
+.sort-recent-button {
+  position: relative;
+  background-color: #009255;
+  left: -24.5vw;
+  scale: 0.5;
+}
+.sort-popular-button {
+  position: relative;
+  background-color: #009255;
+  left: -28vw;
+  scale: 0.5;
+}
+
+.post-write-button {
+  position: relative;
+  top: 10vh;
+  left: 1.8vw;
+  scale: 0.63;
+  font-size: 30px;
+  font-weight: bold;
+  background-image: url("../../../assets/write.png");
+  background-size: 22%;
+  background-position: left 20px top 15px;
+  background-repeat: no-repeat;
+  background-color: white;
+  border: 1.8px solid #bbbbbb;
+  border-radius: 50px;
+  width: 180px;
+  height: 85px;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  justify-content: flex-end; /* 오른쪽 정렬 */
+  align-items: center; /* 가운데 정렬 */
+  padding-right: 50px; /* 오른쪽 패딩 추가 */
+}
+.post-write-button:hover {
+  border-color: #009255;
+  transition: none;
+}
+.post-write-button2 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font-size: 30px;
+  font-family: inherit;
+  color: black;
+  font-weight: bold;
+
+  text-align: left;
+  text-decoration: none;
+
+  border-radius: 0;
+  display: inline-block;
+  width: auto;
+
+  box-shadow: none;
+
+  cursor: pointer;
+
+  transition: none;
+}
+
+.post-write-button2:hover {
+  transform: none;
+  background: none;
+  color: inherit;
+  transition: none;
+}
+
+.post-views,
+.post-likes,
+.post-comments {
+  position: relative;
+  top: -2vh;
+  left: 29vw;
+  display: flex; /* Flexbox 사용 */
+  align-items: center; /* 수평 가운데 정렬 */
+  font-size: 20px;
+  scale: 0.8;
+}
+
+.post-views img,
+.post-likes img,
+.post-comments img {
+  margin-right: 7px; /* 이미지와 텍스트 사이 간격 설정 */
+}
+
+/* 검색창 */
+.search-container {
+  position: relative;
+  top: 20vh;
+  left: 2vw;
+}
+.search-input {
+  position: relative;
+  top: -3vh;
+  width: 28vw;
+  height: 2vh;
+  transform: scale(2);
+  border-radius: 10px;
+  border: 1px solid #bbbbbb;
+  outline: none;
+  padding-left: 30px;
+  font-size: 8px;
+  background-image: url("../../../assets/search.png");
+  background-size: 3%;
+  background-position: left 7px top 3px;
+  background-repeat: no-repeat;
+}
+.search-input:focus {
+  border-color: #008000;
+  background-image: url("../../../assets/search.gif");
+  background-size: 3%;
+  background-position: left 7px top 3px;
+  background-repeat: no-repeat;
+}
+.search-input::placeholder {
+  color: #707070;
+  opacity: 0.5;
+  font-size: 8px;
+  position: relative;
+  top: 0.1vh;
+  left: 0vw;
+}
+
+.post-list-container {
+  position: relative;
+  top: 0vh;
+  left: 1vw;
+  text-decoration: none;
+  color: inherit;
+}
+
+.post-box {
+  position: relative;
+  top: 10vh;
+  left: 20vw;
+  max-width: 60vw;
+  height: 22vh;
+  border-bottom: 1px solid #707070;
+}
+
+.post-box:hover {
+  background-color: rgba(27, 95, 48, 0.2);
+}
+
+.post-title-container {
+  position: relative;
+  top: 2vh;
+  left: 2vw;
+  display: flex;
+  gap: 10px;
+}
+
+.post-text-container {
+  position: relative;
+  top: 3vh;
+  left: -5vw;
+  display: flex;
+  gap: 40px;
+  scale: 0.8;
+}
+.post-box-link {
+  text-decoration: none;
+  color: inherit;
+}
+.post-title-title {
+  position: relative;
+  top: 0 vh;
+  left: 0vw;
+}
+.post-title-content {
+  position: relative;
+  top: 5vh;
+  left: -8vw;
+}
+.post-card-container {
+  position: relative;
+  top: -25vh;
+  left: 48vw;
+}
+.post-author {
+  position: relative;
+  top: -9.5vh;
+  left: -23.5vw;
+  scale: 1;
+}
+.post-time {
+  position: relative;
+  top: -7.5vh;
+  left: -26.5vw;
+  scale: 1;
+}
+.post-view-count {
+  position: relative;
+  top: -7.5vh;
+  left: -28.7vw;
+  scale: 1;
+}
+.button-thumbs-up {
+  position: relative;
+  top: -7.5vh;
+  left: -25.5vw;
+  scale: 1;
+}
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 17vh;
+  right: 10px;
+  gap: 5px;
+}
+
+.pagination-button {
+  margin: 0 6px;
+  scale: 0.7;
+  background-color: white;
+  color: black;
+}
+
+.pagination-button.active {
+  background-color: green;
+  color: white;
+}
+
+.squre-container {
+  position: relative;
+  top: 10vh;
+  left: -1vw;
+  scale: 1.03;
+}

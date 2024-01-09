@@ -1,0 +1,209 @@
+.signupPage-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+}
+
+.signupPage-container h2 {
+  position: absolute;
+  top: 0px;
+  left: 200px;
+  font-size: 45px;
+}
+
+.signupPage-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.signupPage-container-signup {
+  position: relative;
+  display: flex; /* flexbox 활성화 */
+  justify-content: center; /* 가로축 중앙 정렬 */
+  align-items: center; /* 세로축 중앙 정렬 */
+  color: #ffffff;
+}
+
+.input-field-signup-id,
+.input-field-signup-pw,
+.input-field-signup-pw-confirm,
+.input-field-signup-email,
+.input-field-signup-nickname,
+.input-field-signup-picture {
+  position: relative;
+  right: -30px;
+  top: 300px;
+  width: 100%;
+  margin-bottom: 50px;
+  transform: scale(1.2);
+}
+#switch-to-login-button {
+  position: relative;
+
+  right: 15vw;
+  top: 12vw;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 30px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  display: flex; /* 추가 */
+  align-items: center; /* 추가 */
+  justify-content: center; /* 추가 */
+  font-size: 18px;
+  scale: 1.2;
+}
+#switch-to-login-button::before {
+  content: "◀";
+  color: #ffffff;
+  scale: 0.9;
+}
+
+#email-check-button,
+#id-check-button {
+  position: absolute;
+  right: 30px;
+  top: -40px;
+  transform: translateY(-50%);
+  width: 150px;
+  height: 35px;
+  color: #ffffff;
+  background-color: #8dabfb;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  line-height: 0px;
+  font-size: 18px;
+  scale: 0.9;
+}
+#file-upload-button {
+  position: absolute;
+  right: 30px;
+  top: 00px;
+  transform: translateY(-50%);
+  width: 240px;
+  height: 40px;
+  color: #ffffff;
+  background-color: #8dabfb;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  line-height: 0px;
+  font-size: 18px;
+  scale: 0.9;
+}
+.input-field-signup-id label,
+.input-field-signup-pw label,
+.input-field-signup-pw-confirm label,
+.input-field-signup-email label,
+.input-field-signup-nickname label {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  font-size: 15px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.input-field-signup-picture label {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  font-size: 15px;
+  color: #ffffff;
+  font-weight: bold;
+}
+.input-field-signup-id input,
+.input-field-signup-pw input,
+.input-field-signup-pw-confirm input,
+.input-field-signup-email input,
+.input-field-signup-nickname input {
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  outline: none;
+  padding-top: 20px;
+  width: 200px;
+  background: transparent; /* 배경색을 투명하게 설정 */
+}
+
+.input-field-signup-id input::placeholder,
+.input-field-signup-pw input::placeholder,
+.input-field-signup-pw-confirm input::placeholder,
+.input-field-signup-email input::placeholder,
+.input-field-signup-nickname input::placeholder {
+  color: #ffffff;
+  opacity: 0.8;
+}
+#upload-complete {
+  /* text-decoration: underline; 밑줄 대신 border-bottom을 사용 */
+  border-bottom: 1px solid #ffffff; /* 1px 두께의 #8dabfb 색상의 선으로 밑줄 효과 */
+  padding-bottom: 5px; /* 밑줄과 텍스트 사이의 간격을 조절 */
+  color: #ffffff;
+  position: relative;
+  top: 35px;
+  font-size: 10px;
+  opacity: 0.8;
+  width: 200px;
+}
+
+#submit-button {
+  position: relative;
+  top: 550px;
+  align-self: center;
+  transform: translateY(-50%);
+  width: 250px;
+  height: 60px;
+  color: #ffffff;
+  background-color: #4a6eea;
+  border: none;
+  border-radius: 150px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* 추가 - 색상 변경 효과를 부드럽게 만들어줍니다. */
+}
+
+#id-check-button:hover,
+#email-check-button:hover,
+#file-upload-button:hover,
+#submit-button:hover {
+  background-color: #2148d2;
+}
+
+#file-requirements {
+  position: absolute;
+  top: 25px;
+  left: 30px;
+  font-size: 10px;
+  color: #ffffff;
+}
+
+#checkid1 {
+  position: absolute;
+  top: -5px;
+  left: 100px;
+  font-size: 10px;
+  color: #ea4a4a;
+}
+#checkid2 {
+  position: absolute;
+  top: -5px;
+  left: 130px;
+  font-size: 10px;
+  color: #ffffff;
+}
+
+#checkemail1 {
+  position: absolute;
+  top: -5px;
+  left: 100px;
+  font-size: 10px;
+  color: #ea4a4a;
+}
+#checkemail2 {
+  position: absolute;
+  top: -5px;
+  left: 130px;
+  font-size: 10px;
+  color: #4a6eea;
+}

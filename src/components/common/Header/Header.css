@@ -1,0 +1,102 @@
+@font-face {
+  font-family: "ChosunBg";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunBg.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  font-family: "ChosunBg", sans-serif;
+  border-bottom: 1px solid #cccccc;
+}
+
+.logo,
+.profile {
+  margin: 0 20px;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1.3px solid #008000;
+  transition: all 0.3s ease-in-out;
+}
+
+.logo:hover,
+.profile:hover {
+  transform: scale(1.2);
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+
+.link {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-size: 18px;
+}
+
+.link:hover {
+  transform: scale(1.3);
+}
+
+.link.active {
+  color: #008000;
+}
+
+.dropdown-menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  right: 20px;
+  top: 80px;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  padding: 25px;
+  gap: 30px;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  transform: translateY(-10px);
+  z-index: 1;
+}
+
+.dropdown-menu.active {
+  display: flex;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.dropdown-menu div:hover {
+  color: #008000;
+}
+
+#close-button {
+  position: relative;
+  top: -20px;
+  right: -25px;
+  scale: 0.8;
+  background-color: #f8f9fa;
+  padding: 5px;
+  border: 1px solid #ced4da;
+  border-radius: 50px;
+  transition: background-color 0.3s;
+}
+
+#close-button:hover {
+  background-color: #34a853;
+}
+
+.menu-item {
+  position: relative;
+  top: -15px;
+}

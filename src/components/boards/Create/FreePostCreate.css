@@ -1,0 +1,124 @@
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ql-toolbar {
+  position: relative;
+  top: 210px;
+  width: 50%;
+  height: 50px;
+  margin: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.ql-toolbar .ql-formats:nth-child(1) {
+  position: relative;
+  top: -100px;
+  left: -160px;
+  scale: 1.1;
+}
+
+.ql-toolbar .ql-formats:nth-child(2) {
+  position: relative;
+  top: -100px;
+  left: -130px;
+  scale: 1.1;
+}
+
+.ql-toolbar .ql-formats:nth-child(3) {
+  position: relative;
+  top: -100px;
+  left: -100px;
+  scale: 1.1;
+}
+.ql-container {
+  position: relative;
+  font-family: "Pretendard-Regular", sans-serif; /* 폰트 변경 */
+  top: 210px;
+  width: 50%;
+  margin: auto;
+  height: 300px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-size: 18px; /* 본문 폰트 크기 지정 */
+}
+
+.title-input {
+  font-family: "Pretendard-Regular", sans-serif; /* 폰트 변경 */
+  border: none; /* 테두리 제거 */
+  font-size: 45px; /* 폰트 크기 변경 */
+  font-weight: bold;
+  position: relative;
+  top: -37vh;
+  left: 7vw;
+  width: 50%;
+  outline: none; /* 활성화 상태에서 테두리 제거 */
+}
+.title-input::placeholder {
+  color: #575757; /* placeholder 색상 변경 */
+}
+.tag-input {
+  font-family: "Pretendard-Regular", sans-serif; /* 폰트 변경 */
+  border: none; /* 테두리 제거 */
+  font-size: 20px; /* 폰트 크기 변경 */
+  position: relative;
+  top: -280px;
+  left: 100px;
+  width: 50%;
+  outline: none; /* 활성화 상태에서 테두리 제거 */
+}
+
+.tag-input::placeholder {
+  color: #575757; /* placeholder 색상 변경 */
+}
+
+/* FreePostCreate.css */
+
+.button-cancel {
+  background-color: #f44336; /* Red */
+  position: relative;
+  top: 230px;
+  right: 150px;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.button-cancel:hover {
+  background-color: #e60000;
+  color: white;
+}
+
+.button-register {
+  background-color: #4caf50; /* Green */
+  position: relative;
+  top: 230px;
+  right: 100px;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.button-register:hover {
+  background-color: #45a049;
+  color: white;
+}
