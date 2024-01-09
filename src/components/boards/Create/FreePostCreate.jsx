@@ -49,7 +49,7 @@ const FreePostCreate = () => {
       .post("http://localhost:4000/board/posts", postData)
       .then((response) => {
         if (response.status === 200) {
-          alert(response.data.message);
+          alert("게시글이 작성됐습니다.");
           navigate("/FreePostList");
         }
       })

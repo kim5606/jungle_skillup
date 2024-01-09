@@ -191,13 +191,23 @@ body {
 .post-title-title {
   position: relative;
   top: 0 vh;
-  left: 0vw;
+  left: -1vw;
+  width: 100vw;
+  text-align: left;
 }
 .post-title-content {
   position: relative;
   top: 5vh;
-  left: -8vw;
+  left: -31.5vw;
+  width: 100vw;
+  text-align: left;
+  overflow: hidden; /* 추가된 부분 */
+  text-overflow: ellipsis; /* 추가된 부분 */
+  display: -webkit-box; /* 추가된 부분 */
+  -webkit-line-clamp: 2; /* 추가된 부분 */
+  -webkit-box-orient: vertical; /* 추가된 부분 */
 }
+
 .post-card-container {
   position: relative;
   top: -25vh;

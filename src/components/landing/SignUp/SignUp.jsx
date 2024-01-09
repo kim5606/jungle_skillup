@@ -104,14 +104,14 @@ const SignUpView = ({ switchToLogin }) => {
 
     if (!response.ok) {
       if (response.status === 409) {
-        alert("이미 존재하는 사용자입니다.");
+        window.alert("이미 존재하는 사용자입니다.");
       } else {
-        alert("회원가입에 실패했습니다.");
+        window.alert("회원가입에 실패했습니다.");
       }
       return;
     }
 
-    alert("회원가입에 성공했습니다.");
+    window.alert("회원가입에 성공했습니다.");
     switchToLogin();
   };
 
@@ -245,20 +245,20 @@ const SignUpView = ({ switchToLogin }) => {
                     }
                   );
                   if (response.ok) {
-                    console.log("구글을 통한 회원가입에 성공하였습니다.");
+                    window.alert("구글을 통한 회원가입에 성공하였습니다.");
                   } else {
                     const errorData = await response.json();
-                    console.log(
+                    window.alert(
                       "구글을 통한 회원가입에 실패하였습니다: " +
                         errorData.message
                     );
                   }
                 } catch (error) {
-                  console.log("서버 오류가 발생했습니다: " + error);
+                  window.alert("서버 오류가 발생했습니다: " + error);
                 }
               }}
               onFailure={(err) => {
-                console.log("구글을 통한 회원가입에 실패하였습니다: " + err);
+                window.alert("구글을 통한 회원가입에 실패하였습니다: " + err);
               }}
             />
           </div>

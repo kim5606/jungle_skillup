@@ -17,6 +17,7 @@ const FreePostDetail = () => {
   const [newComment, setNewComment] = useState("");
   const [liked, setLiked] = useState(false);
   const [userId, setUserId] = useState(null);
+  const [author, setAuthor] = useState(null);
 
   const navigate = useNavigate();
   const modules = {
@@ -31,6 +32,7 @@ const FreePostDetail = () => {
     const token = localStorage.getItem("token"); // 실제 토큰을 저장하는 key 값으로 수정하세요
     if (token) {
       const decoded = jwt.decode(token);
+      setAuthor(decoded.nickname);
       setUserId(decoded.id); // 토큰에 저장된 사용자 ID의 key 값으로 수정하세요
     }
   }, []);
@@ -94,6 +96,10 @@ const FreePostDetail = () => {
   };
 
   const handleEdit = () => {
+    if (post.author !== author) {
+      alert("작성자만 글을 수정할 수 있습니다.");
+      return;
+    }
     navigate(`/FreePostEdit/${id}`);
   };
 

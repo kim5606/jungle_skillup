@@ -180,7 +180,6 @@ body {
 }
 
 .post-container {
-  width: 100%;
   position: relative;
   top: 0vw;
   left: -9vw;
@@ -191,19 +190,21 @@ body {
 
 .post-content {
   position: relative;
-  top: 5vh;
-  left: -13vh;
+  top: -3vh;
+  left: 450px; /* 왼쪽으로 정렬 */
+  width: 40%; /* 넓이 지정 */
   font-size: 24px;
   color: #495057;
   margin-top: 20px;
+  text-align: left;
+  line-height: 1.5; /* 줄 간 간격 조절 */
 }
 
 .post-title {
   position: relative;
-  top: -5vh;
-  left: -6vw;
+  top: -10vh;
+  left: 0vw;
   font-size: 2em;
-  color: #343a40;
 }
 .author-image {
   position: relative;
@@ -255,6 +256,7 @@ body {
   cursor: pointer;
   margin-top: 20px;
 }
+
 .post-detail-button-container {
   position: relative;
   top: -50px;

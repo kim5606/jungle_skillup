@@ -23,16 +23,16 @@ const LoginView = ({ switchToSignUp }) => {
         body: JSON.stringify({ username, password }),
       });
       if (response.ok) {
-        console.log("로그인에 성공하였습니다.");
         const tokenData = await response.json();
         localStorage.setItem("token", tokenData.token);
         navigate("/dashboard");
+        window.alert("로그인에 성공하였습니다.");
       } else {
         const errorData = await response.json();
-        console.log("로그인에 실패하였습니다: " + errorData.message);
+        window.alert("로그인에 실패하였습니다: " + errorData.message);
       }
     } catch (error) {
-      console.log("서버 오류가 발생했습니다: " + error);
+      window.alert("서버 오류가 발생했습니다: " + error);
     }
   };
 
@@ -98,22 +98,22 @@ const LoginView = ({ switchToSignUp }) => {
                   );
 
                   if (response.ok) {
-                    console.log("구글 로그인에 성공하였습니다.");
+                    window.alert("구글 로그인에 성공하였습니다.");
                     const tokenData = await response.json();
                     localStorage.setItem("token", tokenData.token);
                     navigate("/FreePostList");
                   } else {
                     const errorData = await response.json();
-                    console.log(
+                    window.alert(
                       "구글 로그인에 실패하였습니다: " + errorData.message
                     );
                   }
                 } catch (error) {
-                  console.log("서버 오류가 발생했습니다: " + error);
+                  window.alert("서버 오류가 발생했습니다: " + error);
                 }
               }}
               onFailure={(err) => {
-                console.log("구글 로그인에 실패하였습니다: " + err);
+                window.alert("구글 로그인에 실패하였습니다: " + err);
               }}
             />
           </div>
