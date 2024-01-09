@@ -21,66 +21,66 @@
 ### 2.1 프로젝트 구조
 
 📦src/
-┣ 📂assets/
-┃ ┣ 🎞️background.mp4
-┃ ┣ 🖼️banner1.png
-┃ ┣ 🖼️Button.png
-┃ ┣ 🖼️comment.png
-┃ ┣ 🖼️like.png
-┃ ┣ 🖼️Login.png
-┃ ┣ 🖼️Login3.png
-┃ ┣ 🖼️Logo (2).png
-┃ ┣ 🖼️Logo.png
-┃ ┣ 🖼️scedule.png
-┃ ┣ 🖼️search.gif
-┃ ┣ 🖼️search.png
-┃ ┣ 🖼️view.png
-┃ ┗ 🖼️write.png
-┣ 📂components/
-┃ ┣ 📂boards/
-┃ ┃ ┣ 📂Create/
-┃ ┃ ┃ ┣ 🎨FreePostCreate.css
-┃ ┃ ┃ ┗ 💻FreePostCreate.jsx
-┃ ┃ ┣ 📂Detail/
-┃ ┃ ┃ ┣ 🎨FreePostDetail.css
-┃ ┃ ┃ ┗ 💻FreePostDetail.jsx
-┃ ┃ ┣ 📂Edit/
-┃ ┃ ┃ ┗ 💻FreePostEdit.jsx
-┃ ┃ ┗ 📂List/
-┃ ┃ ┣ 🎨FreePostList.css
-┃ ┃ ┗ 💻FreePostList.jsx
-┃ ┣ 📂common/
-┃ ┃ ┣ 📂Header/
-┃ ┃ ┃ ┣ 🎨Header.css
-┃ ┃ ┃ ┗ 💻Header.jsx
-┃ ┃ ┗ 📂ModalComponent/
-┃ ┃ ┗ 💻ModalComponent.jsx
-┃ ┗ 📂landing/
-┃ ┣ 📂LandingPage/
-┃ ┃ ┃ ┣ 🎨LandingPage.css
-┃ ┃ ┃ ┗ 💻LandingPage.jsx
-┃ ┣ 📂Login/
-┃ ┃ ┃ ┣ 🎨Login.css
-┃ ┃ ┃ ┗ 💻Login.jsx
-┃ ┗ 📂SignUp/
-┃ ┃ ┣ 🎨SignUp.css
-┃ ┃ ┗ 💻SignUp.jsx
-┣ 📂services/
-┃ ┣ 💻API.js
-┃ ┣ 💻Board.js
-┃ ┣ 💻Comment.js
-┃ ┣ 💻DataBase.js
-┃ ┗ 💻Server.js
-┣ 📜.env
-┣ 🎨App.css
-┣ 💻App.js
-┣ 🎨index.css
-┣ 💻index.js
-┗ 💻reportWebVitals.js
+┣📂assets/
+┃ ┣🎞️background.mp4
+┃ ┣🖼️banner1.png
+┃ ┣🖼️Button.png
+┃ ┣🖼️comment.png
+┃ ┣🖼️like.png
+┃ ┣🖼️Login.png
+┃ ┣🖼️Login3.png
+┃ ┣🖼️Logo (2).png
+┃ ┣🖼️Logo.png
+┃ ┣🖼️scedule.png
+┃ ┣🖼️search.gif
+┃ ┣🖼️search.png
+┃ ┣🖼️view.png
+┃ ┗🖼️write.png
+┣📂components/
+┃ ┣📂boards/
+┃ ┃ ┣📂Create/
+┃ ┃ ┃ ┣🎨FreePostCreate.css
+┃ ┃ ┃ ┗💻FreePostCreate.jsx
+┃ ┃ ┣📂Detail/
+┃ ┃ ┃ ┣🎨FreePostDetail.css
+┃ ┃ ┃ ┗💻FreePostDetail.jsx
+┃ ┃ ┣📂Edit/
+┃ ┃ ┃ ┗💻FreePostEdit.jsx
+┃ ┃ ┗📂List/
+┃ ┃ ┣🎨FreePostList.css
+┃ ┃ ┗💻FreePostList.jsx
+┃ ┣📂common/
+┃ ┃ ┣📂Header/
+┃ ┃ ┃ ┣🎨Header.css
+┃ ┃ ┃ ┗💻Header.jsx
+┃ ┃ ┗📂ModalComponent/
+┃ ┃ ┗💻ModalComponent.jsx
+┃ ┗📂landing/
+┃ ┣📂LandingPage/
+┃ ┃ ┃ ┣🎨LandingPage.css
+┃ ┃ ┃ ┗💻LandingPage.jsx
+┃ ┣📂Login/
+┃ ┃ ┃ ┣🎨Login.css
+┃ ┃ ┃ ┗💻Login.jsx
+┃ ┗📂SignUp/
+┃ ┃ ┣🎨SignUp.css
+┃ ┃ ┗💻SignUp.jsx
+┣📂services/
+┃ ┣💻API.js
+┃ ┣💻Board.js
+┃ ┣💻Comment.js
+┃ ┣💻DataBase.js
+┃ ┗💻Server.js
+┣📜.env
+┣🎨App.css
+┣💻App.js
+┣🎨index.css
+┣💻index.js
+┗💻reportWebVitals.js
 
 ### 2.2 개발 일정
 
-![이미지 대체 텍스트](./assets/scedule.png)
+![이미지 대체 텍스트](./src/assets/scedule.png)
 
 ## 3. 데이터베이스 모델링(ERD)
 
